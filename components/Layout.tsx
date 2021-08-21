@@ -13,10 +13,7 @@ export default function Layout({ children, showMailingList = false }: Props) {
     <div className="bg-gray-200 min-h-screen flex flex-col justify-between">
       <Head>
         <meta name="og:title" content="Pipehogs" />
-        <meta
-          name="og:image"
-          content="https://pipehogs.vercel.app/Pipehogs.png"
-        />
+        <meta name="og:image" content="https://pipehogs.com/Pipehogs.png" />
         <meta
           name="og:description"
           content="Dominant athletes, dedicated scholars, and passionate foodies."
