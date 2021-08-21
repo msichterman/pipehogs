@@ -46,7 +46,7 @@ export default function Home() {
             <img
               className="object-cover object-center rounded-lg"
               alt="hero"
-              src="./GroupPic.jpg"
+              src="/GroupPic.JPG"
             />
           </div>
         </div>
