@@ -5,7 +5,7 @@ import Link from 'next/link'
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   return (
-    <div className="sticky top-0 shadow-md">
+    <div className="sticky top-0 shadow-sm">
       <nav className="bg-gradient-to-r from-red-600 to-red-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="flex items-center justify-between h-20 w-full">
@@ -21,22 +21,22 @@ function Navbar() {
             <div className="hidden md:block">
               <div className="w-full flex items-baseline justify-items-end space-x-4">
                 <Link href="/meet">
-                  <a className=" hover:bg-gray-200 text-gray-200 hover:text-gray-700 px-3 py-2 rounded-md text-md font-medium">
+                  <a className=" hover:bg-gray-200 text-gray-200 hover:text-gray-700 px-3 py-2 rounded-md uppercase tracking-wide text-sm font-bold">
                     Meet the Hogs
                   </a>
                 </Link>
                 <Link href="/partners">
-                  <a className=" hover:bg-gray-200 text-gray-200 hover:text-gray-700 px-3 py-2 rounded-md text-md font-medium">
+                  <a className=" hover:bg-gray-200 text-gray-200 hover:text-gray-700 px-3 py-2 rounded-md uppercase tracking-wide text-sm font-bold">
                     Partners
                   </a>
                 </Link>
                 <Link href="/about">
-                  <a className="text-gray-200 hover:bg-gray-200 hover:text-gray-700 px-3 py-2 rounded-md text-md font-medium">
+                  <a className="text-gray-200 hover:bg-gray-200 hover:text-gray-700 px-3 py-2 rounded-md uppercase tracking-wide text-sm font-bold">
                     About
                   </a>
                 </Link>
                 <Link href="/contact">
-                  <a className="text-gray-200 hover:bg-gray-200 hover:text-gray-700 px-3 py-2 rounded-md text-md font-medium">
+                  <a className="text-gray-200 hover:bg-gray-200 hover:text-gray-700 px-3 py-2 rounded-md uppercase tracking-wide text-sm font-bold">
                     Contact
                   </a>
                 </Link>
@@ -100,19 +100,24 @@ function Navbar() {
         >
           {
             <div className="md:hidden" id="mobile-menu">
-              <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-100">
-                <Link href="/episodes">
-                  <a className="hover:bg-gray-200 text-gray-600 hover:text-gray-200 block px-3 py-2 rounded-md text-base font-medium">
-                    Episodes
+              <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gradient-to-r from-red-600 to-red-800">
+                <Link href="/meet">
+                  <a className=" hover:bg-gray-200 text-gray-200 hover:text-gray-700 block px-3 py-2 rounded-md uppercase tracking-wide text-sm font-bold">
+                    Meet the Hogs
+                  </a>
+                </Link>
+                <Link href="/partners">
+                  <a className=" hover:bg-gray-200 text-gray-200 hover:text-gray-700 block px-3 py-2 rounded-md uppercase tracking-wide text-sm font-bold">
+                    Partners
                   </a>
                 </Link>
                 <Link href="/about">
-                  <a className="hover:bg-gray-200 text-gray-600 hover:text-gray-200 block px-3 py-2 rounded-md text-base font-medium">
+                  <a className="text-gray-200 hover:bg-gray-200 hover:text-gray-700 block px-3 py-2 rounded-md uppercase tracking-wide text-sm font-bold">
                     About
                   </a>
                 </Link>
                 <Link href="/contact">
-                  <a className="hover:bg-gray-200 text-gray-600 hover:text-gray-200 block px-3 py-2 rounded-md text-base font-medium">
+                  <a className="text-gray-200 hover:bg-gray-200 hover:text-gray-700 block px-3 py-2 rounded-md uppercase tracking-wide text-sm font-bold">
                     Contact
                   </a>
                 </Link>

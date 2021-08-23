@@ -2,11 +2,11 @@ export default function MailingList() {
   return (
     <section className="bg-gradient-to-r from-red-600 to-red-800 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto lg:flex lg:items-center lg:justify-between">
-        <h2 className="text-xl font-medium tracking-tight text-gray-900 sm:text-3xl">
-          <span className="block font-bold tracking-tighter">
+        <h2 className="text-xl font-medium text-gray-900 sm:text-3xl">
+          <span className="block uppercase tracking-wide text-sm font-bold">
             Want to stay in the loop with news about the Pipehogs?
           </span>
-          <span className="block text-gray-100 text-lg">
+          <span className="block text-gray-100 text-lg font-light leading-relaxed tracking-tight">
             Join the mailing list to be the first to hear about new partners,
             products, and more.
           </span>

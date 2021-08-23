@@ -7,12 +7,12 @@ export default function Footer() {
         <div className="flex flex-col flex-wrap justify-center p-5 md:flex-row">
           <nav className="flex flex-wrap items-center justify-center w-full mx-auto mb-6 text-base space-x-2">
             <Link href="/about">
-              <a className="text-red-600 hover:bg-black hover:text-white px-3 py-2 rounded-md text-md font-medium">
+              <a className="text-red-600 hover:bg-black hover:text-white px-3 py-2 rounded-md uppercase tracking-wide text-sm font-bold">
                 About
               </a>
             </Link>
             <Link href="/contact">
-              <a className="text-red-600 hover:bg-black hover:text-white px-3 py-2 rounded-md text-md font-medium">
+              <a className="text-red-600 hover:bg-black hover:text-white px-3 py-2 rounded-md uppercase tracking-wide text-sm font-bold">
                 Contact
               </a>
             </Link>
@@ -55,9 +55,9 @@ export default function Footer() {
           </span>
         </div>
         <div className="flex align-center w-full px-8 py-6 mt-4 bg-black">
-          <p className="mx-auto text-sm text-center text-white">
+          <p className="mx-auto text-center text-white uppercase tracking-wide text-sm">
             {' '}
-            Pipehogs © 2021{' '}
+            <span className="font-bold">Pipehogs</span> © 2021{' '}
           </p>
         </div>
       </footer>
