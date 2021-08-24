@@ -24,6 +24,7 @@ export default function about() {
                 <a
                   className="text-blue-500 hover:text-blue-700"
                   href="https://beefjurgy.com"
+                  target="_blank"
                 >
                   beefjurgy.com
                 </a>
@@ -104,6 +105,7 @@ export default function about() {
                 <a
                   className="text-blue-500 hover:text-blue-700"
                   href="https://msich.dev"
+                  target="_blank"
                 >
                   msich.dev
                 </a>
