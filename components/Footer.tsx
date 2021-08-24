@@ -11,11 +11,11 @@ export default function Footer() {
                 Home
               </a>
             </Link>
-            <Link href="/about">
+            {/* <Link href="/about">
               <a className="text-red-600 hover:bg-black hover:text-white px-3 py-2 rounded-md uppercase tracking-wide text-sm font-bold">
                 About
               </a>
-            </Link>
+            </Link> */}
             <Link href="/contact">
               <a className="text-red-600 hover:bg-black hover:text-white px-3 py-2 rounded-md uppercase tracking-wide text-sm font-bold">
                 Contact
@@ -40,7 +40,15 @@ export default function Footer() {
         <div className="flex align-center w-full px-8 py-6 bg-black">
           <p className="mx-auto text-center text-white uppercase tracking-wide text-sm">
             {' '}
-            <span className="font-bold">Pipehogs</span> © 2021{' '}
+            <span className="font-bold">Pipehogs</span> © 2021. Crafted by{' '}
+            <a
+              className="text-red-300 hover:text-red-500 font-bold"
+              target="_blank"
+              href="https://msich.dev"
+            >
+              MSICH
+            </a>
+            .{' '}
           </p>
         </div>
       </footer>

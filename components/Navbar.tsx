@@ -30,16 +30,16 @@ function Navbar() {
                     Meet the Hogs
                   </a>
                 </Link>
-                <Link href="/partners">
+                {/* <Link href="/partners">
                   <a className=" hover:bg-gray-200 text-gray-200 hover:text-gray-700 px-3 py-2 rounded-md uppercase tracking-wide text-sm font-bold">
                     Partners
                   </a>
-                </Link>
-                <Link href="/about">
+                </Link> */}
+                {/* <Link href="/about">
                   <a className="text-gray-200 hover:bg-gray-200 hover:text-gray-700 px-3 py-2 rounded-md uppercase tracking-wide text-sm font-bold">
                     About
                   </a>
-                </Link>
+                </Link> */}
                 <Link href="/contact">
                   <a className="text-gray-200 hover:bg-gray-200 hover:text-gray-700 px-3 py-2 rounded-md uppercase tracking-wide text-sm font-bold">
                     Contact
@@ -116,16 +116,16 @@ function Navbar() {
                     Meet the Hogs
                   </a>
                 </Link>
-                <Link href="/partners">
+                {/* <Link href="/partners">
                   <a className=" hover:bg-gray-200 text-gray-200 hover:text-gray-700 block px-3 py-2 rounded-md uppercase tracking-wide text-sm font-bold">
                     Partners
                   </a>
-                </Link>
-                <Link href="/about">
+                </Link> */}
+                {/* <Link href="/about">
                   <a className="text-gray-200 hover:bg-gray-200 hover:text-gray-700 block px-3 py-2 rounded-md uppercase tracking-wide text-sm font-bold">
                     About
                   </a>
-                </Link>
+                </Link> */}
                 <Link href="/contact">
                   <a className="text-gray-200 hover:bg-gray-200 hover:text-gray-700 block px-3 py-2 rounded-md uppercase tracking-wide text-sm font-bold">
                     Contact
