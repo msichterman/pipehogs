@@ -199,9 +199,9 @@ export default function about() {
                 {' '}
                 Bryce is majoring in criminology and criminal justice. Even
                 though Bryce is 6’9”, he has the wingspan of a small middle
-                school kid. During his off time enjoys playing video games with
-                his teammates and tracking down the best French dip sandwich in
-                town.{' '}
+                school kid. During his off time he enjoys playing video games
+                with his teammates and tracking down the best French dip
+                sandwich in town.{' '}
               </p>
               <h2 className="mb-8 text-xs font-semibold tracking-widest text-black uppercase title-font">
                 {' '}
