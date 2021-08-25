@@ -42,7 +42,7 @@ function Navbar() {
                 </Link> */}
                 <Link href="/contact">
                   <a className="text-gray-200 hover:bg-gray-200 hover:text-gray-700 px-3 py-2 rounded-md uppercase tracking-wide text-sm font-bold">
-                    Contact
+                    Become a Partner
                   </a>
                 </Link>
               </div>
@@ -128,7 +128,7 @@ function Navbar() {
                 </Link> */}
                 <Link href="/contact">
                   <a className="text-gray-200 hover:bg-gray-200 hover:text-gray-700 block px-3 py-2 rounded-md uppercase tracking-wide text-sm font-bold">
-                    Contact
+                    Become a Partner
                   </a>
                 </Link>
               </div>

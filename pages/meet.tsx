@@ -199,11 +199,9 @@ export default function about() {
             <div className="flex flex-col items-start text-left lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16">
               <p className="mb-12 text-base font-medium leading-relaxed text-gray-700 ">
                 {' '}
-                Bryce is majoring in criminology and criminal justice. Even
-                though Bryce is 6’9”, he has the wingspan of a small middle
-                school kid. During his off time he enjoys playing video games
-                with his teammates and tracking down the best French dip
-                sandwich in town.{' '}
+                Bryce is majoring in criminology and criminal justice. During
+                his off time he enjoys playing video games with his teammates
+                and tracking down the best French dip sandwich in town.{' '}
               </p>
               <h2 className="mb-8 text-xs font-semibold tracking-widest text-black uppercase title-font">
                 {' '}
@@ -266,7 +264,7 @@ export default function about() {
                 className="object-cover object-center rounded"
                 alt="hero"
                 loading="lazy"
-                src="https://dummyimage.com/720x600/F3F4F7/8693ac"
+                src="/ethan.jpeg"
               />
             </div>
             <div className="flex flex-col items-start text-left lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16">
@@ -358,7 +356,7 @@ export default function about() {
                 className="object-cover object-center rounded"
                 alt="hero"
                 loading="lazy"
-                src="https://dummyimage.com/720x600/F3F4F7/8693ac"
+                src="/turner.jpeg"
               />
             </div>
             <div className="flex flex-col items-start text-left lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16">
@@ -594,7 +592,7 @@ export default function about() {
                 className="object-cover object-center rounded"
                 alt="hero"
                 loading="lazy"
-                src="https://dummyimage.com/720x600/F3F4F7/8693ac"
+                src="/trent.jpeg"
               />
             </div>
             <div className="flex flex-col items-start text-left lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16">

@@ -18,7 +18,7 @@ export default function Footer() {
             </Link> */}
             <Link href="/contact">
               <a className="text-red-600 hover:bg-black hover:text-white px-3 py-2 rounded-md uppercase tracking-wide text-sm font-bold">
-                Contact
+                Become a Partner
               </a>
             </Link>
             <a target="_blank" href="https://twitter.com/pipehogs">

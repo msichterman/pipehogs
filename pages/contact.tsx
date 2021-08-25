@@ -1,38 +1,61 @@
+import { useState } from 'react'
 import Layout from '../components/Layout'
 
 export default function contact() {
+  const initialState = {
+    firstName: '',
+    lastName: '',
+    email: '',
+    company: '',
+    message: '',
+  }
+
+  const [form, setForm] = useState(initialState)
+
+  const handleChange = (e) => {
+    const { name, value } = e.target
+    console.log(value)
+    setForm({ ...form, [name]: value })
+  }
+
   return (
     <Layout showMailingList>
       <div className="flex flex-col w-full items-center justify-center">
-        <h1 className="uppercase tracking-wide text-5xl font-extrabold block my-12">
-          Contact Us
+        <h1 className="uppercase tracking-wide text-3xl lg:text-5xl font-extrabold block my-12">
+          Become a Pipehogs Partner
         </h1>
         <form className="w-full max-w-lg mb-12">
           <div className="flex flex-wrap -mx-3 mb-6">
             <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
               <label
                 className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                htmlFor="grid-first-name"
+                htmlFor="firstName"
               >
-                First Name
+                First Name*
               </label>
               <input
                 className="appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:ring-gray-500 focus:border-gray-500"
-                id="grid-first-name"
+                id="firstName"
+                name="firstName"
                 type="text"
+                value={form.firstName}
+                onChange={(e) => handleChange(e)}
               />
             </div>
             <div className="w-full md:w-1/2 px-3">
               <label
                 className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                htmlFor="grid-last-name"
+                htmlFor="lastName"
               >
-                Last Name
+                Last Name*
               </label>
               <input
                 className="appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:ring-gray-500 focus:border-gray-500"
-                id="grid-last-name"
+                id="lastName"
+                name="lastName"
                 type="text"
+                value={form.lastName}
+                onChange={(e) => handleChange(e)}
               />
             </div>
           </div>
@@ -40,14 +63,17 @@ export default function contact() {
             <div className="w-full px-3">
               <label
                 className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                htmlFor="grid-email"
+                htmlFor="email"
               >
-                Email
+                Email*
               </label>
               <input
                 className="appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:ring-gray-500 focus:border-gray-500"
-                id="grid-email"
+                id="email"
+                name="email"
                 type="email"
+                value={form.email}
+                onChange={(e) => handleChange(e)}
               />
               <p className="text-gray-600 text-xs italic">
                 Feel free to{' '}
@@ -66,14 +92,17 @@ export default function contact() {
             <div className="w-full px-3">
               <label
                 className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                htmlFor="grid-company"
+                htmlFor="company"
               >
-                Company / Business
+                Company / Business*
               </label>
               <input
                 className="appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:ring-gray-500 focus:border-gray-500"
-                id="grid-company"
+                id="company"
+                name="company"
                 type="text"
+                value={form.company}
+                onChange={(e) => handleChange(e)}
               />
             </div>
           </div>
@@ -81,17 +110,20 @@ export default function contact() {
             <div className="w-full px-3">
               <label
                 className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                htmlFor="grid-message"
+                htmlFor="message"
               >
-                Message
+                Message*
               </label>
               <textarea
                 className=" no-resize appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:ring-gray-500 focus:border-gray-500 h-48 resize-none"
-                id="grid-message"
+                id="message"
+                name="message"
+                value={form.message}
+                onChange={(e) => handleChange(e)}
               ></textarea>
               <p className="text-gray-600 text-xs italic">
-                We are open to new partners, appearance requests, social media
-                posts, and more!
+                Want to feed the hogs? Become a Wednesday night offensive line
+                dinner sponsor!
               </p>
             </div>
           </div>
@@ -100,6 +132,7 @@ export default function contact() {
               <button
                 className="shadow bg-red-600 hover:bg-red-800 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
                 type="button"
+                onClick={() => console.log(form)}
               >
                 Send
               </button>
